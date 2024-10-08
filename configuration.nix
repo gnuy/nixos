@@ -112,6 +112,7 @@
 	slack
 	keybase
 	keybase-gui
+	kbfs
       ];
     };
 

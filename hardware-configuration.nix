@@ -18,21 +18,22 @@
   fileSystems."/" =
     { 
       # device = "/dev/disk/by-uuid/a4cdda92-db93-4405-aa6b-dc1821adeb7c";
-      device = "/dev/disk/by-uuid/7ef38977-adc6-4389-8799-d990accc0c46";
-      fsType = "ext4";
-    };
-
-  fileSystems."/nix" =
-    { 
+      # device = "/dev/disk/by-uuid/7ef38977-adc6-4389-8799-d990accc0c46";
       device = "/dev/disk/by-uuid/76c2c33c-6dcc-4312-b8e4-2bd0131b42b3";
       fsType = "ext4";
     };
 
-  fileSystems."/etc/nixos" =
-    { device = "/nix/config";
-      fsType = "none";
-      options = [ "bind" ];
-    };
+#  fileSystems."/nix" =
+#    { 
+#      device = "/dev/disk/by-uuid/76c2c33c-6dcc-4312-b8e4-2bd0131b42b3";
+#      fsType = "ext4";
+#    };
+
+#  fileSystems."/etc/nixos" =
+#    { device = "/nix/config";
+#      fsType = "none";
+#      options = [ "bind" ];
+#    };
 
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/4989-FCEB";
